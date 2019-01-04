@@ -4,30 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" type="image/png" href="favicon.PNG" sizes="">
+    <link rel="shortcut icon" type="image/gif" href="favicon.gif" sizes="20">
+   
+ <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="bootstrap-4.1.3-dist/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/fontawesome-free-5.5.0-web/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-4.1.3-dist/styles/bootstrap-grid.css">
+    <style>
+      /* Styles of the page */
+       
+      
+      .contacts{background-color: white; margin: 0px; padding: 4px}
+      
+                /* style of the body */
+      body {height: 100%;}
+      .bg {background-image: url("dubai.jpg");; height: 100%;
+      /* alignment of the background */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover}
+              
+                    /* style of the social icons */
+      #social {float: right;}
+      
+              /* style of the tabs */
+      .tab li {display: inline; text-decoration: none; list-style-type: none; text-align: right;
+          background-color: transparent; background-size: 10px; vertical-align: middle; padding: 5px;
+       margin-right: 5px; font-size: 15px; color: black}
 
-    <link rel="stylesheet" href="searchIt.css">
+      .searchit {color: honeydew; border-radius: 45px;}
+        
+        a:hover {color: red; text-decoration: none;}
+        a:visited {color: pink}
+        .row{margin: 2px; }
+        h1 {font-size: 40px; color: white; text-align: center; text-shadow: 2px 2px 15px solid black; margin: 220px; padding: 30px; }
+        
+      .wrapper{align-items: stretch}
+
+      footer {background-color: black; margin: 1px; color: white; padding: 10px; border-top: 5px solid cyan}
+    text {background-size: 20px}
+    </style>
+<title>SearchIt | Find & Connect with Businesses in Nigeria</title>
 </head>
 <body>
-    <header>
-            <img src="download.PNG" alt="download.PNG" width="20" height="20">info@searchit.com.ng    
-            <img src="phone.PNG" alt="phone.PNG" width="20" height="20">   +234-706-139-4773
-            <img id="Icon" src="business.jpg" alt="business.jpg" width="120", height="25">
-            <img id="Icon" src="facebook.jpg" alt="facebook.jpg" width="25", height="25">
-            <img id="Icon" src="pin it.PNG" alt="pin it.PNG" width="25", height="25">
-            <img id="Icon" src="download.PNG" alt="download.PNG" width="25", height="25">
-            <img id="Icon" src="images.jpg" alt="images.jpg" width="25", height="25">
+    <div class="contacts">
+        <!-- contacts starts here -->
+
+        <div class="contacts tb-contact pull-left">
+        <!-- email is important -->
             
-     
+        <i class="col-xs-3 fas fa-envelope"></i> <a href="info@searchit.com.ng">info@searchit.com.ng</a> 
             
-            
-           
-    </header>
+        <!-- phone no -->
+            <i class="col-xs- 3 fas fa-phone"></i> <a href=" +234-706-139-4773"> +234-706-139-4773</a>
+        
+        <!-- contacts ends here -->
+
+        <div id="social">
+            <div class="tb-contact push-right">
+                
+              <a href="https://www.facebook.com/brimatel"><i class="col-xs-4 fab fa-facebook push-right" ></i></a>
+              <a href="www.twitter.com/brimatel"> <i class="col-xs-5 fab fa-twitter"></i></a>
+              <a href="www.google.com/brimatel"> <i class="fab fab fab fab fa-google-plus"></i></a>
+              <a href="#"> <i class="fab fa-linkedin"></i></a>
+              <a href="#"> <i class="fab fa-pinterest"></i></a>
+               <a href="#"> <img id="Icon" src="business.jpg" alt="business.jpg" width="120", height="25"></a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="bg">
     
-    <img class="Searchit" src="searchit.PNG" alt="searchit.PNG" width="200" height="100">
+    
+    
+    <img class="Searchit" src="searchit.PNG" alt="searchit.PNG" width="180" height="120">
 
     <div id="nav">
-            <ul>
+            <ul class="tab">
                 <li><a href="Home">Home</a></li>
                 <li><a href="Advanced Search">Advanced Search</a></li>
                 <li><a href="Categories">Categories</a></li>
@@ -38,16 +91,131 @@
                 <li><a href="Signup">Signup</a></li>
                 <li><a href="Signin">Signin</a></li>
                 <li><a href="Blog">Blog</a></li>
-        
+       
             </ul>
     </div>
 
-        
-    <h1>Your search ends here<br>
-    <input type="Search" size="70" placeholder="Search for Business in Nigeria">
-    <input class="button" type="button" value="SearchIt" size="35">
-    </h1>
+    <div class="searchit">
+      <h1>Your search ends here</h1> 
+      <form class="form-inline">
+        <div class="input search">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fas fa-search"></i> </span>
+          </div>
+        </div>
+      <input class="text" type="text" class="form" size="10px" placeholder="Search for Business in Nigeria">
+      <input class="btn btn-danger" type="btn" value="SearchIt" size="10">
+      </form>
+    
+
+      
+    </div>
+    
+  </div>  
+   
+   
+    
+  
+</div>
+
+    <!-- Beginning tabs again -->
 
     
-</body>
+
+    <!-- second leave Begins here -->
+  <div class="container">
+      <div class="row">
+          <div class="category-box text-white col-md-3 col-sm-3 col-sm-3 bg-primary mb-3">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h4 class="card-title">Primary card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          
+          <div class="card text-white col-sm-3 bg-success mb-3">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h4 class="card-title">Primary card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card text-white col-sm-3 bg-danger mb-3">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h4 class="card-title">Primary card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <!-- side bar nav -->
+            <nav id="sidebar">
+              <div class="sidebar-header">
+            <label for="search">search</label>
+                <input type="text">
+
+              </div>
+
+            </nav>
+            <!-- page content -->
+            <div id="content">
+
+              
+          </div>
+
+          <div class="card text-white col-sm-3 bg-info mb-3 pull-left">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h4 class="card-title">Primary card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+<footer>
+  <!-- <div class="fluid"> -->
+    <!-- <div class="container"> -->
+      <div class="row" style="margin-right:0px;margin-left: 0px">
+        <div class="col-4"><i class="fa far fa-building"></i>
+      Contact Us <br>
+        <i class="fa fas fas fa-building"></i> Brimatel Global Network<br>
+        <i class="fa fas fa-phone"></i> Tel : +234 706 139 4773<br>
+        <i class="fa far fa-envelope"></i> Mail : info@brimatel.com
+        Business Hours : 9:30 - 5:30
+      </div>
+
+        <div class="col-4">
+         About Searchit.com.ng
+       Searchit.com.ng is a marketing, communication and networking service, which has been created to help all types of businesses to connect to their potential target audience.
+      </div>
+        
+      <div class="col-4">
+       Searchit.com.ng - Our Social Responsibility
+       
+       The directory aims to:
+       
+       - Promote business to business activities
+       
+       - Enable local sourcing of products and services
+       
+       - Offer information and support to local businesses
+      </div>
+<dl>
+     <dt>Site Map </dt> 
+       <dd>Show</dd>
+      </dl> 
+            </div>
+      </div>
+    <!-- </div> -->
+
+  <!-- </div> -->
+</footer>
+
+    <script src="bootstrap-4.1.3-dist/script/jquery-3.3.1.min.js"></script>
+    <script src="fontawesome/fontawesome-free-5.5.0-web/js/all.min.js"></script>
+    <script src="bootstrap-4.1.3-dist/script/bootstrap.min.js"></script>
+  </body>
 </html>

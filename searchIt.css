@@ -10,7 +10,7 @@ padding: 0px;
  #nav ul {padding: 0px; margin: 0px;
     list-style-type: none; text-align: right; 
     
-
+.fas fa-envelope{background-color: red;}
 }
  #nav li {display: inline;
     padding: 5px; vertical-align: middle;

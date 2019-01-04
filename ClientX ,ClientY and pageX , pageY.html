@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ClientX</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="ClientX ,ClientY and pageX , pageY.css">
+</head>
+<body>
+    <!-- <table>
+        <tr>
+            <td>Mouse Position inside</td>
+            <td>X &nbsp; &nbsp; &nbsp; Y </td>
+        </tr>
+
+        <tr>
+            <td>-Client :</td>
+            <td id="client"></td>
+            <td>Client view port</td>
+        </tr>
+
+        <tr>
+            <td>-page :</td>
+            <td id="page"></td>
+            <td>Document page (Scroll dwon to see the difference)</td>
+        </tr>
+
+        <tr>
+            <td>(Scroll Top:</td>
+            <td id="scrollTop"></td>
+            <td>Scroll top[pageY-ClientY])</td>
+        </tr>
+
+        <tr>
+            <td>-screen :</td>
+            <td id="screen"></td>
+            <td>screen</td>
+        </tr>
+    </table> -->
+    
+    
+    <!-- //Detect a mousemove event and get the mouse position relative to the page-->
+    <!-- <h1>Please move the mouse on this window!</h1>
+    <div id="mousePositions"></div>
+    <p> The above values are the same when We're listening on the window
+        and We did not scroll down.</p>
+        <div id="mouseScreenPositions"></div> -->
+    
+    
+    <!-- Detect a mousemove and get the mouse position relative tp the element that 
+    fixed the event -->
+        <h1>Please move the mouse on the grey canvas below!</h1>
+        <p>The mouse position is not correct (try to move the cursor at the left corner
+            of the canvas: It should be 0,0 but isn't. And if you scroll the page its worse.
+       ClientX and Client Y cannot be used 'as is!' </p>
+       <canvas id="myCanvas" width="300" height="50"></canvas>
+       <div id="mousePositions"></div>
+       <div id="mouseScreenPositions"></div>
+    <script src="ClientX ,ClientY and pageX , pageY.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function changeTitleCSSStyle() {
+        var parameters = document.querySelector("#mainTitle");
+        parameters.style.color = "black"; 
+        parameters.style.backgroundColor = "green";
+        parameters.style.border = "5px solid blue"; 
+    </script>
+</head>
+<body>
+    <h1 id="mainTitle">My Homepage</h1>
+    <p> This is an interactive page</p>
+    <button onclick="changeTitleCSSStyle();">Click here to change me!</button>
+    
+</body>
+</html>

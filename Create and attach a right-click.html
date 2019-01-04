@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> mouseMove Event Relative to page</title>
+    <link rel="stylesheet" href="Create and attach a right-click.css">
+    <script src="Create and attach a right-click.js"></script>
+</head>
+<body>
+    <div>
+        <nav id="context-menu" class="context-menu">
+            <ul class="context-menu_items">
+                <li class="context-menu_item" id="context-menu-learn" 
+                onclick="menuItem1();">Learn</li>
+                <li class="context-menu_item" onclick="menuItem2();">Clear</li>
+                <li class="context-menu_item" onclick="toggleMenuOff();">Close</li>
+            </ul>
+        </nav>
+    </div>
+    <p>Try right-click on this</p>
+    <div id="div1" class="div">A div with a context</div>
+
+    <p>This one does not have a context menu attached, try also a right click</p>
+    <div id="div2" class="div">Another div without a context number.</div>
+ 
+    
+</body>
+</html>

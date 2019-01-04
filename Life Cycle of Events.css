@@ -1,0 +1,27 @@
+/* #pageSize {border: 1px solid red;
+color: red;
+padding: 2px }
+#screenSize {border: 1px solid red;
+    color: red;
+    padding: 2px } */
+
+    .progress {
+        border: 1px solid blue;
+        width: 100px;
+        position: fixed;
+        top: 10px; right: 10px;
+    }
+
+    .progress>div {
+        height: 12px;
+        background: lightblue;
+        width: 0%;
+        font-size: 8px;
+    }
+
+    #text {
+        margin-top: 50px;
+    }
+    body{
+        Height: 2000px;
+    }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moving DOM Element</title>
+    <script src="Using the Drag & Drop.js"></script>
+    <link rel="stylesheet" href="Using the Drag & Drop.css">
+</head>
+<body>
+    <p id="text" ondragstart="drag(this, event)">Please 
+        click an image to move it to the list of cool image!</p>
+    <br>
+    <img src="https://mainline.i3s.unice.fr/mooc//ABiBCwZ.png" id="cr" 
+       ondragstart="drag(this, event);" alt="Logo Chrome">
+  <img src="https://mainline.i3s.unice.fr/mooc//n7xo93U.png" id="ff" 
+       ondragstart="drag(this, event);" alt="Logo Firefox">
+  <img src="https://mainline.i3s.unice.fr/mooc//ugUmuGQ.png" id="ie" 
+       ondragstart="drag(this, event);" alt="Logo IE">
+  <img src="https://mainline.i3s.unice.fr/mooc//jfrNErz.png" id="op" 
+       ondragstart="drag(this, event);" alt="Logo Opera">
+  <img src="https://mainline.i3s.unice.fr/mooc//gDJCG0l.png" id="sf" 
+       ondragstart="drag(this, event);" alt="Logo Safari">
+   <img src="business.jpg" alt="business.jpg" id="yx" ondragstart="drag(this, event);">    
+       <br/>
+  
+
+    <div class="box" ondragover="return false" ondrop="drop(this, event)">
+        <p>cool web browser</p>
+    </div>
+
+    <div class="box" ondragover="return false" ondrop="drop(this, event)"></div>
+    
+    
+    
+</body>
+</html>

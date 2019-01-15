@@ -1,0 +1,9 @@
+.box{
+    border: silver solid;
+    height: 1280px;
+    width: 2580px;
+    float: left;
+    margin: 10px;
+    padding: 25px;
+}
+

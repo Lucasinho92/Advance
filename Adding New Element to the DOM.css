@@ -1,0 +1,16 @@
+body{
+    background-color: darkorange;
+    color: white;
+}
+
+#newNumber{
+    border: 2px solid white;
+    padding: 20px 20px 20px 5px;
+    background-color: cadetblue;
+}
+
+#button{
+    padding: 10px;
+    background-color: darkseagreen;
+    margin-top: 10px
+}

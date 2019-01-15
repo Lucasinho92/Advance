@@ -1,0 +1,26 @@
+body{display: absolute;
+    font-family: Arial, 'Gill Sans', 'Gill Sans MT', 
+    Calibri, 'Trebuchet MS', sans-serif;
+    background-color: darkorange;
+    color: white;
+}
+
+#newText{
+    margin-top: 20px;
+    border: 2px solid white;
+    padding: 20px 20px 20px 5px;
+    background-color: cadetblue;
+}
+
+#button{
+    padding: 10px;
+    background-color: darkseagreen;
+    margin-top: 10px
+}
+
+#texts{
+    border: 2px solid white;
+    background-color: goldenrod;
+    text-decoration: none;
+    text-decoration-style: none
+}

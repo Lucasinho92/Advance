@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+   
+    #shape{
+        background-color: orange;
+        height: 300px;
+        width: 300px;
+        position: relative;
+        display: none;
+        
+       
+       
+        
+
+    }
+   
+    </style>
+
+</head>
+<body>
+   <p>Your time : <span id="timeTaken"></span></p>
+   <div id="shape"></div>
+   <script type='text/javascript'>
+   var start = new Date().getTime();
+   function getRandomColor() {
+       var letters = '0123456789ABCDEF'.split('');
+       var color = '#';
+       for (var i = 0; i < 6; i++){
+           color += letters[Math.floor(Math.random()*16)]
+       }
+       return color;
+   }
+   function makeAShape(){
+       var top = Math.random() * 400;
+       var left = Math.random() * 400;
+       var width = (Math.random() * 200) + 100;
+       if (Math.random() > 0.5){
+           document.querySelector('#shape').style.borderRadius = '50%';
+       }else{
+           document.querySelector('#shape').style.borderRadius = '0';
+       }
+      
+       document.querySelector('#shape').style.backgroundColor = getRandomColor();
+       document.querySelector('#shape').style.top = top + 'px';
+       document.querySelector('#shape').style.left = left + 'px';
+       document.querySelector('#shape').style.width = width + 'px';
+       document.querySelector('#shape').style.height = width + 'px';
+        
+
+       document.querySelector('#shape').style.display = 'block';
+       var start = new Date().getTime();
+
+   }
+
+   function appearAfterDelay() {
+    setTimeout(makeAShape, Math.random() * 2000);
+
+   }
+    appearAfterDelay();
+   
+   document.querySelector('#shape').onclick = function(){
+       document.querySelector('#shape').style.display = 'none';
+       var end = new Date().getTime();
+       var timeTaken = (end - start)/1000;
+       document.querySelector('#timeTaken').innerHTML = timeTaken + 's';
+       appearAfterDelay();
+   }
+   </script>
+    
+</body>
+</html>

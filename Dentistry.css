@@ -1,0 +1,90 @@
+/* The Body of the page */
+body{background-color: rgb(3, 3, 63);
+color: rgba(26, 114, 114, 0.993);
+font-family: 'Courier New', Courier, monospace;
+display: grid;
+/* background-image: url(dubai.jpg); */
+background-size: 2000px;
+height: 20000;
+
+}
+
+/* This is the position for the navigation bar
+#navigation{
+    
+} */
+
+/* The styling of the form */
+#form{
+    float: none;
+}
+
+div input{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: left;
+    
+
+}
+
+#div label{
+    padding: 20px;
+    margin: 5px;
+
+}
+        /* Styling of the Table */
+#table{
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+table tr{border: 1px solid white;
+    background-color: rgb(23, 128, 93);
+    padding: 20px;
+}
+
+table td{background-color: blueviolet;
+}
+    /* styling of the hover, visited and links */
+a:hover{
+    background-color: rgba(10, 87, 117, 0.418);
+    color: red;
+    text-decoration: none;
+
+
+}
+a {
+    color: green;
+    text-decoration: none;
+     
+}
+a:visited{
+    color: red;
+    
+}
+a.dropdown-item:hover{background-color: rgb(204, 201, 12);
+    color: seashell;
+
+}
+
+/* styling of the page percentage */
+
+.progress{
+    border: 1px solid white;
+    width: 200px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+}
+
+.progress>div {
+    height: 12px;
+    width: 100%;
+   background-color: lightblue;
+    font-size: 8px;
+    text-align: center;
+
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="Jquery/jQuery-3.4.0.min.js"></script>
+   <style type="text/css">
+   #circle{
+       background-color: red;
+       height: 150px;
+       width: 150px;
+       border-radius: 50%;
+       margin: 20px;
+   }
+   .square{
+        background-color: green;
+        height: 150px;
+        width: 150px;
+        margin: 20px;
+       
+
+   }
+   #text{
+       display: none;
+   }
+   </style>
+</head>
+<body>
+  
+  <p id="text">This is a page</p>
+  <button id="toggle">Toggle text</button>
+  
+
+    
+
+  <script type = 'text/javascript'>
+    // $('#toggle').click(function(){
+    //    if($('#text').css('display') == 'none'){
+    //        $('#text').fadeIn();
+    //    }else{
+    //        $('#text').fadeOut
+    //    }
+    // })
+   
+$('#toggle').click(function(){
+   if($('#text').css('display') == 'none'){
+       $('#text').fadeIn();
+   }else{
+       $('#text').fadeOut();
+   }
+});
+   
+  </script>
+    
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <Style type="text/css">
+    body{
+        background-color: aquamarine;
+        margin: 0 auto;
+        font-display: initial;
+        background: url('Images/account (5).jpg');
+        background-size: 1000px;
+        margin: 5px;
+       
+        
+    }
+   
+    .dem{
+        float: left;
+        text-align: center;
+        background-color: rgb(9, 74, 128);
+        width: 70px;
+        height: 50px;
+       
+        font-size: 30px;
+        color: white;
+        padding: 30px;
+        border: 10px outset whitesmoke;
+        margin: 20px;
+    }
+    h3{
+        color: red;
+    }
+    </Style>
+</head>
+<body>
+    <h3 id="welcome">Welcome to Dentistry.com.ng. The site is still under-maintenance.
+        It will be up for the normal duty in due time.
+        sorry for the incoveniences.
+    </h3>
+    <p id="demo"  class="dem"></p>
+    <p id="demo2" class="dem"></p>
+    <p id="demo3" class="dem"></p>
+    <p id="demo4" class="dem"></p>
+    <script type="text/javascript">
+    // set the date We are Counting to
+    var countDownTimer = new Date('April 30, 2019 15:37:25').getTime();
+    // update the time every 1 second
+    var x = setInterval(function(){
+        // get todays date and time
+        var now = new Date().getTime();
+        // find the distance between Now and CountDown date
+        var distance = countDownTimer - now;
+        // time calculations for days, hours, minutes and seconds;
+        var days = Math.floor(distance/(1000*60*60*24));
+        var hours = Math.floor((distance%(1000*60*60*24)) / (1000*60*60))
+        var minutes = Math.floor((distance % (1000*60*60))/(1000*60));
+        var seconds =Math.floor((distance % (1000*60)) / 1000);
+
+        // output of the result in an element with id 'demo';
+        document.querySelector('#demo').innerHTML = days  + ' days';
+        document.querySelector('#demo2').innerHTML = hours + ' hrs';
+        document.querySelector('#demo3').innerHTML = minutes + ' min';
+        document.querySelector('#demo4').innerHTML = seconds + ' s';
+
+        // if countDown is over write some text
+
+        if (distance < 0){
+            clearInterval(x);
+
+            document.querySelector('#demo').innerHTML = 'EXPIRED' 
+
+        }
+    }, 1000);
+    </script>
+    
+</body>
+</html>

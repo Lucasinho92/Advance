@@ -1,0 +1,315 @@
+ #topbar{
+        /* background-color:rgb(187, 25, 25); */
+        width: 1000px;
+        padding: 0px;
+        height: 40px;
+        margin: 0px auto;
+        
+    }
+    body{
+        margin-left: 5px;
+        padding: 0px;
+        font-family:Helvetica, Arial, freesans, sans-serif;
+        /* background-image: url('Images/account 12.jpg'); */
+        background-size: 1000px;
+         
+
+
+
+    }
+    #logo{
+        margin-top: 8px;
+        width: 100px;
+        float: left;
+        margin-right: 8px;
+
+    }
+    .topbar-section{
+        float: left;
+        border-left: 1px solid #cccccc;
+        height: 60%;
+    }
+
+    #signin-image{
+        width: 20px;
+        margin: 8px 15px;
+        float: left;
+        border-radius: 90px 90px 90px 90px;
+        border: 1px solid black;
+
+    }
+    #signin-text{
+        font-weight: bold;
+        font-size: 90%;
+        position: relative;
+        top: 14px;
+        padding-right: 5px;
+    }
+    #bell-image{
+        height: 100%;
+        margin: 9px 8px 0px 8px;
+        width: 30px;
+        float: left;
+        border-left: 1px solid #cccccc;
+        padding-left: 15px;
+    }
+    .top-menu{
+        font-weight: bold;
+        font-size: 90%;
+        padding: 12px 10px 0px;
+    }
+    #more-arrow{
+        width: 22px;
+        height: 12px;
+        margin-left: 3px;
+        background-color: #cccccc;
+    }
+    #search-box{
+        background-color: beige;
+        border: none;
+        margin: 5px 0px 5px 5px;
+        padding: 5px;
+        float: left;
+        font-weight: bold;
+        font-size: 15px;
+        
+
+    }
+    #search-box-image{
+        width: 20px;
+        height: 15px;
+        margin-top: 5px;
+        background-color: white;
+        padding: 10px 5px 2px 5px;
+       
+    }
+    .clear{
+        clear: both; 
+    }
+    #menu-bar-container{
+        background-color: #db1919;
+        width: 100%;
+        height: 70px;
+        border-top: #cccccc;
+
+    }
+    #menu-bar{
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    h1{
+        padding: 0px;
+        margin: 0px;
+        color: white;
+        font-size: 40px;
+        font-weight: normal;
+        padding-top: 10px;
+        float: left;
+    }
+    #local-news{
+        float: right;
+        border: 1px solid #BB2525;
+        width: 220px;
+        padding: 5px 5px 0px 10px;
+        margin: 5px 10px 0px 0px;
+
+    }
+    #local-news a {
+        color: white;
+        text-decoration: none;
+        font-size: 26px;
+        position: relative;
+        top: -5px;
+
+    }
+    #local-news a:hover{
+        text-decoration: none;
+        color: black;
+    }
+    #image-local-news{
+        height: 40px;
+    }
+    .topbar-section a{
+        color: black;
+        text-decoration: none;
+    }
+    .topbar-section a:hover{
+        color: red;
+    }
+    #menu-bar-2-container{
+        background-color: #bb1010;
+        height: 30px;
+        width: 100%;
+        margin: 10px auto;
+    }
+    #clear{
+        clear: both;
+    }
+
+    #menu-bar-2 a{
+        color: white;
+        padding: 0 10px;
+        height: 20px;
+        text-decoration: none;
+        font-size: 13px;
+        width: 800px;
+        margin: 0 4px;
+        border-right: 1px solid #cccccc;
+        position: relative;
+        top: -5px;
+
+
+    }
+
+    #menu-bar-2 a:hover{
+        color: black;
+    }
+    .no-border{
+        border: none !important;
+        margin: 0;
+        padding: 0;
+
+    }
+    #more-image{
+        height: 25px;
+        width: 28px;
+       
+        position: relative;
+        top: 8px;
+        margin: 0 !important;
+    }
+    .clear{
+        clear: both;
+
+    }
+    #page-container{
+        width: 1000px;
+        margin: 0 auto;
+        float: left;
+    }
+    #main-article{
+        float: left;
+        width: 600px;
+        margin: 0 auto;
+    }
+    #bene-tech{
+        border-right: 1px solid #cccccc;
+        padding-right: 90px;
+        /* width: 700px; */
+        margin: 0 auto;
+
+        
+        
+    }
+
+    
+    h2{
+        font-weight: normal;
+        margin-top: 40px;
+        font-size: 20px;
+        border-bottom: 4px solid #a91717;
+        width: 105px;
+    }
+    h3 a{
+        color:black;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    h3 a:hover{
+        color:#1167a3;
+    }
+    #article-summary{
+        color:#5a5a5a;
+        width: 270px;
+        float: left;
+
+        
+    }
+    .article-clock{
+        height: 15px;
+        position:relative;
+        top: 2px;
+    }
+    .topic-link{
+        text-decoration: none;
+        color:  #a91717;
+        border-left: 1px solid #5a5a5a;
+        padding-left: 10px;
+        font-weight:bold;
+        
+    }
+    .topic-link:hover{
+        color:#1167a3;
+    }
+
+    #article-summary a:hover{
+        color:#1167a3;
+    }
+    .date{
+        padding-right: 10px;
+    }
+    #article-image{
+        height: 150px;
+        width: 300px;
+        position: relative;
+        float:left;
+        margin-left: 20px;
+        margin-right: 10px;
+        
+    }
+    #article-hr{
+        border-top: 1px solid #a91717;
+        width: 50px;
+         
+    }
+    .article-link{
+        color: black;
+        text-decoration: none;
+    }
+    #watch-listen{
+        margin-left: 10px;
+        width: 250px;
+        float: right;
+        margin-top: 30px;
+       
+
+    }
+    .watch-listen-link{
+        font-weight: bold;
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+        margin-top: 0 auto;
+
+    }
+    h3{
+        font-weight: normal;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    #article-side-images{
+        height: 50px;
+        width: 70px;
+        margin-right: 2px;
+        float: left;
+    }
+    .watch-listen-link:hover{
+        color:#1167a3;
+    }
+    .side-article{
+        float: right;
+        width:150px;
+        position: relative;
+        top: -15px;
+    }
+    .no-border{
+        border-left: none;
+        padding: none;
+    }
+    .border-right{
+        border-right:1px solid #cccccc;
+        padding-right: 30px;
+    }
+    

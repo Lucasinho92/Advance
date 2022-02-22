@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectable</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+    <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.js"></script>
+    <style type="text/css">
+        
+        #feedback { font-size: 1.4em; }
+  #selectables .ui-selecting { background: green; }
+  #selectables .ui-selected { background: #F39814; color: white; }
+  #selectables { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+  #selectables li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }
+    </style>
+</head>
+<body>
+    <p id="feedback">
+        <span>You have selected:</span><Span id="select-result">none</Span>
+    </p>
+    <ol id="selectables">
+        <li class="items">Bolu</li>
+        <li class="items">Muhammed</li>
+        <li class="items">Mahfuzah</li>
+        <li class="items">Kafilat</li>
+        <li class="items">Taofeeq</li>
+    </ol>
+    <script type="text/javascript">
+ $ (function(){
+     $('#selectables').selectable({
+         stop: function(){
+             var result = ('#select-result').empty();
+             ('.ui-selected', this).each(function(){
+                 var index = ('#selectables li').each(this);
+                 result.append('name-selected '+(index +1))
+             })
+         }
+     })
+ })
+       
+   
+    </script>
+    
+</body>
+</html>

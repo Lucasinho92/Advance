@@ -1,0 +1,91 @@
+#top-bar{
+    width: 100%;
+    margin: 0;
+    background-color: rgba(112, 233, 14, 0.842);
+    height: 40px;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+#logo{
+    margin-top: 1px;
+    width: 100px;
+    size: 3px;
+    float: left;
+    margin-right: 8px;
+}
+.topbar-section{
+    float: left;
+    border-left: 1px solid rgb(102,102,102);
+    /* height: 100%; */
+}
+#signin-image{
+    width:20px;
+    margin: 10px 15px;
+    float: left; 
+
+}
+#span-signin{
+    font-weight: bold;
+    font-size: 80%;
+    color: white;
+    position: relative;
+    top: 8px;
+    
+    /* padding-right: 20px; */
+    height: 35px;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    
+    color: red;
+    font-weight: 10px;
+}
+.topbar{
+    font-weight: bold;
+    font-size: 80%;
+    color: white;
+    height: 24px;
+    width:20px;
+    padding: 5px 10px;
+    margin: 5px 15px;
+    float: left;
+    
+
+
+}
+#more-arrow{
+    width: 13px;
+    margin-left: 10px;
+}
+#search-box{
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    color: black;
+    padding: 5px;
+    margin: 7px 0px 7px 7px;
+    float: left;
+
+}
+#magnifying-glass{
+    height: 25px;
+    margin-top: 7px;
+
+    
+   
+}
+#video-scrn{
+   
+    float: right;
+    margin: 35px 50px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.js"></script>
+    <style>
+        /* #draggable { 
+            width: 150px;
+             height: 150px;
+             padding: 0.5em;
+             background-color: chartreuse;
+             float: left;
+              margin: 0 10px 10px 0;  }; */
+        
+            
+        </style>
+         <script>
+            $( function() {
+             
+           
+             $('#resizable').resizable({
+                 grid:50, alsoResize:'#also',
+                 resize: function(event, ui){
+                     if($('#resizable').width() > 300){
+                         alert('Big enough')
+                     }
+                 }
+                 });
+            $('#also').resizable();
+             
+            
+            } );
+            </script>
+    <title>Document</title>
+</head>
+<body>
+    
+   <div id="resizable" style="width: 200px; height: 300px; background-color: blue; ">Drag to resize me</div>
+    <div id="also" style="width: 200px; height: 300px; background-color: chartreuse; "></div>
+</body>
+</html>

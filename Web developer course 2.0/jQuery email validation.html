@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="jquery-ui.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <style type="text/css">
+    #wrapper{
+        background-color: rgb(31, 168, 93);
+        margin: 0 auto;
+        
+        
+    }
+    body{
+        font-family: Helvetica, sans-serif;
+        font-size: 130%;
+    }
+
+    label{
+        
+        
+        position: relative;
+        top: 12px;
+        float: left;
+        width: 200px;
+        
+    }
+    input{
+        padding: 5px 5px 15px 5px;
+        margin: 5px;
+        width: 320px;
+        font-size: 25px;
+        border-radius: 5px;
+        border: 1px solid grey;
+    }
+    #submitButton{
+        width: 130px;
+        margin-left: 205px;
+    }
+    #errorMessage{
+        color: red;
+        font-size : 20px !important;
+    }
+    #success{
+        display: none;
+        color: green;
+        font-size : 20px !important;
+    }
+   
+    </style>
+</head>
+<body>
+    <div id="wrapper">Please Sign-Up!
+        <div id="success">You are sucessful, Congratulations!</div>
+        <div id='errorMessage'></div>
+        <div >
+            <label for="email" name='email'>Email</label>
+            <input type="email" id="email" name="email"  placeholder="e.g Jamesdoe@gmail.com">
+        </div> 
+        <div >
+            <label for="Phone" name='phone'>Telephone</label>
+            <input type="number" id="Phone" name="phone"  placeholder="e.g 1234567890">
+        </div>  
+        <div >
+            <label for="Password" name='password'>Password</label>
+            <input type="password" id="Password1" name="password">
+        </div>
+        <div>
+            <label for="password" name='Confirmpassword'>Confirm password</label>
+            <input type="password"  id="confirmPassword" name="confirm password">
+        </div> 
+        <div >
+            <input type="Submit" id="submitButton" value="Sign-Up">
+        </div>
+         
+    </div>
+    <script type="text/javascript">
+    function isEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+}
+        $('#submitButton').click(function(){
+            var errorMessage = '';
+            var fieldMissing ='';
+
+            if($('#email').val() ==''){
+                fieldMissing += '<br>Email'
+            }
+            if($('#phone').val() ==''){
+                fieldMissing += '<br>Telephone'
+            }
+            if($('#Password1').val() ==''){
+                fieldMissing += '<br>Password'
+            }
+            if($('#confirmPassword').val() ==''){
+                fieldMissing += '<br>confirmPassword'
+            }
+
+            if(fieldMissing != ''){
+                errorMessage +='<p> The following field(s) are missing</p> :' +
+                fieldMissing
+            }
+            if(isEmail($('#email').val()) == false){;
+                errorMessage += '<p>Your email address is not valid</p>'
+                
+            }
+            if($.isNumeric($('#Phone').val()) == false){
+                errorMessage += '<p>your phone number is not numeric</p>'
+            }
+            if($('#Password1').val() != $('#confirmPassword').val()){
+                errorMessage += '<p> password mismatch</p>'
+            }
+            if(errorMessage != ''){
+                $('#errorMessage').html(errorMessage);
+            }else{
+                $('#success').show();
+                $('#errorMessage').hide();
+            }
+         
+            // alert('LUCAS')
+        })
+    
+    </script>
+    
+</body>
+</html>

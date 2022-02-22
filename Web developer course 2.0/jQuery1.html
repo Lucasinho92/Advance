@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <style type="text/css">
+       
+        #text{
+           display: none;
+        }
+        .square{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin: 10px;
+            
+        }
+
+    </style>
+</head>
+<body>
+   <p id="text">This is luqman my bossom friend who lives in Sagamu,
+        I loved his sister and I'm dating her now</p>
+        <Button id="Kafilat">Press to enter</Button>
+        
+    
+    <script type="text/javascript">
+       var textShowing = true;
+       $('#Kafilat').click(function(){
+           if(textShowing){
+               $('#text').fadeOut(function(){
+                   textShowing = false;
+               })
+           }else{
+               $('#text').fadeIn(function(){
+                   textShowing = true;
+               })
+           }
+       })
+       
+    
+          
+    </script>
+    
+</body>     
+</html>

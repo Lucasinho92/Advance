@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
+    <style type="text/css">
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    #header{
+        font-family:'sans-serif';
+        padding: 5px;
+        
+        
+        background-color: #EEEEEE;
+        width: 100%;
+        height: 30px;
+    }
+        #logo{
+            float: left;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 3px 5px;
+        }
+        #html{
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+
+    
+    #icon-container{
+        background-color: #EEEEEE;
+        margin: 0 auto;
+        width: 300px;
+               
+        
+              
+       
+
+    }
+    .icons-container{
+        float: left;
+        border: 1px solid grey;
+        border-right: none;
+        padding: 5px;
+    }
+    #output{
+        border-right: 1px solid grey;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    .active{
+        background-color:#E8F2FF;
+    }    
+    .highlightedButton{
+        background-color: grey;
+    }
+    textarea{
+        
+        resize: none;
+        border-top: none;
+        border-color: grey;
+       
+    }
+    .panel{
+        width: 50%;
+        float: left;
+        border-left: none;
+    }
+    iframe{
+        border: none;
+    }
+    .hidden{
+        display:none;
+    }
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <div id='logo'>CodePlay</div>
+            <div id='icon-container'>
+                    <div id="html" class="icons-container active">HTML</div>
+                    <div id="css" class="icons-container active">CSS</div>
+                    <div id="javascript" class="icons-container active">Javascript</div>
+                    <div id="output" class="icons-container active">Output</div>
+            </div>
+    </div>
+    <div id=htmlTextArea>
+        <textarea id="htmlPanel" class="panel"><p id="paragraph">Hello Lucas!</p></textarea>
+        <textarea id='cssPanel' class="panel hidden">p{color:green}</textarea>
+        <textarea id='javascriptPanel' class="panel hidden">document.querySelector("#paragraph").innerHTML = "Hello man"</textarea>
+    </div>
+    <iframe id='outputPanel' class="panel" ></iframe>
+    
+    <script type="text/javascript">
+    function updateOutput(){
+        $('iframe').contents().find('html').html("<html><head><style type='text/css'>" +
+            $('#cssPanel').val() + "</style></head><body>" + $('#htmlPanel').val() + "</body></html>");
+            document.querySelector('#outputPanel').contentWindow.eval($('#javascriptPanel').val()) ;
+    }
+    //  This is for the hover option
+    
+    $('.icons-container').hover(function(){
+        $(this).addClass('highlightedButton');
+    }, function(){
+        $(this).removeClass('highlightedButton')
+    });
+    // This is for the toggle option
+    $('.icons-container').click(function(){
+        $(this).toggleClass('active');
+        $(this).removeClass('highlightedButton')
+        // THis is for the panel
+        var panelId = $(this).attr('id') + 'Panel'
+        $('#' + panelId).toggleClass('hidden');
+        var numOfActivePanels = 4 -$('.hidden').length;
+        $('.panel').width($(window).width()/numOfActivePanels);
+        
+    });
+    $('.panel').height($(document).height()-$('#header').height()- 15);
+    $('.panel').width($(window).width()/2 -10);
+   updateOutput();
+    $('textarea').on('keyup change paste', function(){
+        updateOutput();
+    });
+   
+    
+       
+    </script>
+</body>
+</html>

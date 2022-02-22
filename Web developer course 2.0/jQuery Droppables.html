@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droppables</title>
+    <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.js"></script>
+    <style>
+        #first-square{
+            background-color: red;
+            width: 150px;
+            height: 150px;
+            padding: 50px;
+            margin: 5px;
+        }
+        #second-square{
+            background-color: green;
+            width: 80px;
+            height: 80px;
+            padding: 50px;
+            margin: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id='first-square'></div>
+    <div id='second-square'></div>
+    <script type="text/javascript">
+        $('#second-square').draggable();
+        $('#first-square').droppable({
+            drop: function(event, ui){
+                alert('Dropped box')
+            }
+        });
+       
+    </script>
+    
+</body>
+</html>

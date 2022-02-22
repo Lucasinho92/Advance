@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+    
+
+    <h4 style="color:red">How many fingers am I holding up</h4>
+    <p><select id="textInput">
+        <option >1</option>
+        <option >2</option>
+        <option >3</option>
+        <option >4</option>
+        <option >5</option>
+        <option >6</option>
+    </select>
+    <button id="keyWordEntered">Guess</button>
+    </p>
+    
+     
+    <script type = text/javascript>
+        // document.getElementById('keyWordEntered').onclick = function(){
+        //     var numberEntered = Math.random();
+        //         numberEntered = numberEntered * 6;
+        //         numberEntered = Math.floor(numberEntered);
+                
+        //         if (document.getElementById('textInput').value == numberEntered) {
+        //             console.log('You got it')
+                    
+        //         } else {
+        //             console.log('Wrong')
+                    
+        //         }
+             
+        // }
+       function doAGuess(correctAnswer){
+           var guess = Math.random();
+           guess = guess * 6;
+           guess = Math.floor(guess);
+           if (guess == correctAnswer){
+               return(true);
+           }else{
+               return(false);
+                       }
+       }
+       document.getElementById('keyWordEntered').onclick = function(){
+           var myGuess = document.getElementById('textInput').value;
+           var gotIt = false;
+           var numberOfGuesses = 1;
+           while(gotIt == false){
+               if(doAGuess(myGuess) == true){
+                   gotIt = true;
+                   alert('You are right ' + myGuess+' at ' +numberOfGuesses + ' number of Guess')
+               }else{
+                   numberOfGuesses++;
+               }
+           }
+       }
+        
+            
+        
+
+            
+
+          
+       
+     
+    </script> 
+
+
+        
+       
+
+        
+   
+    
+  
+</body>
+</html> 

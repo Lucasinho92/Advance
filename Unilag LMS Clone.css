@@ -1,0 +1,18 @@
+body{
+    background-color: white(96, 128, 165);
+    margin-left: 0.90cm;
+    margin-right: 0.90cm;
+    
+}
+#top-corner{
+    background-color: rgb(240, 240, 240);
+    border-top: 0.1cm solid brown;
+    padding: 8px ;
+    border: 0px, 5px, 5px 5px;
+    
+}
+#unilag-logo{
+    width: 100px;
+    height: 100px;
+
+}

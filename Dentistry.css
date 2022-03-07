@@ -87,7 +87,7 @@ a.dropdown-item:hover{background-color: rgb(204, 201, 12);
     text-align: center;
 
 }
-#content{
+/* #content{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -95,5 +95,5 @@ a.dropdown-item:hover{background-color: rgb(204, 201, 12);
     justify-content: space-around;
     flex-wrap: wrap;
     background-image: linear-gradient(red, green)
-}
+} */
 

@@ -1,0 +1,125 @@
+header{
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+    
+    
+}
+Body{
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+/* nav{position: fixed;
+    right: 0;
+    
+} */
+@media (max-width: 650px)
+{nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+
+}
+}
+#nav-bar{
+    font-size: 15px;
+    padding: 5px;
+    /* width: 60%; */
+     position: fixed;
+    right: 0;
+    
+    
+    
+}
+
+
+
+#hero{
+    margin-left: 100px;
+    
+}
+#home-made{
+    font-size: 50px;
+    margin-top: 100px;
+}
+#email{
+    width: 70%;
+    display: block;
+    border-radius: 20px;
+    height: 40px;
+    font-size: 20px;
+}
+#submit{
+    background-color: orange;
+    width: 20%;
+    height: 30px;
+    padding:0px 30px;
+    margin: 10px;
+    margin-left: 25%;
+    font-size: 25px;
+    font-display: inherit;
+    border-radius: 15px;
+    text-align: center;
+}
+.container{
+    margin: 10px;
+    display: grid;
+}
+.icon{
+    display:inline-block;
+    font-style: normal;
+    width: 100%;
+    margin: 10px;
+    
+    font-weight: bold;
+}
+#header-img{
+    width: 130px;
+    height: 40px;
+    margin-top: 10px;
+    
+    
+    
+}
+#desc{
+    display: grid;
+    font-weight: bold;
+    
+}#bass{
+    float: right;
+}
+#tenor{
+    float: left;
+}
+#valve{
+    float: center;
+}
+.product{
+    width: 300px;
+    height: 200px;
+    background-color: aquamarine;
+    color: black;
+    padding: 15px 0;
+    text-transform: uppercase;
+    display: flex;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.nav-link{
+    
+    color: green;
+    text-decoration: none;
+    margin: 0;
+}
+

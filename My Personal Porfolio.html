@@ -2,12 +2,12 @@
     <!DOCTYPE HTML>
     <head>
         <title>Portfolio Page</title>
-        <link rel="stylesheet/css" href="My_Personal_Portfolio.css">
-        <link rel="stylesheet/css" href="fontawesome/fontawesome-6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="My_Personal_Portfolio.css">
+        <link rel="stylesheet" href="fontawesome/fontawesome-6.1.1/css/all.min.css">
     </head>
     <body>
-        <nav id="navbar">
-            <ul>
+        <nav id="navbar" class="nav">
+            <ul class="nav-list">
                 <li>
                     <a href="#about">About</a>
                 </li>
@@ -15,13 +15,13 @@
                     <a href="#Works">Works</a>
                 </li>
                 <li>
-                    <a href="#contact_Us">Contact Us</a>
+                    <a href="#contact_Us">Contact us</a>
                 </li>
             </ul>
         </nav>
         <section id="welcome-section" class="welcome-section">
-            <h1>Welcome, I'm Lucas</h1>
-            <p>a web Developer</p>
+            <h1 id="Lucas">Welcome, I'm Lucas</h1>
+            <p id="paragraph">a web Developer</p>
         </section>
         <section id="projects">
             <div class="project_tile" class="project_section">
@@ -29,15 +29,15 @@
                     <h2 id="projects-section-header">This is part of my projects</h2>
                 </a>
                 <div class="projects-grid">
-                    <a href="https://codepen.io/lucasinho92/details/NWXYovR" target="_blank" class="project project_tile"></a>
-                    <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project project-tile">
+                    <a class="grid-items" href="https://codepen.io/lucasinho92/details/NWXYovR" target="_blank" class="project project_tile"></a>
+                    <a class="grid-items" href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project project-tile">
                         <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" alt="project">
                         <p class="project-title">
                           <span class="code">&lt;</span>
                           Random Quote Machine
                           <span class="code">/&gt;</span>
                         </p>
-                        <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank" class="project project-tile">
+                        <a class="grid-items" href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank" class="project project-tile">
                             <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" alt="project">
                             <p class="project-title">
                               <span class="code">&lt;</span>
@@ -46,7 +46,7 @@
                             </p>
                           </a>
                           </a>
-                          <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project project-tile">
+                          <a class="grid-items" href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project project-tile">
                             <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" alt="project">
                             <p class="project-title">
                               <span class="code">&lt;</span>
@@ -64,14 +64,29 @@
 
         </section>
         <section id="Works">
-            <h1>Let's Work together</h1>
-            <p>How do you want your tea served?</p>
-            <div>
-                <a href="https://facebook.com/lucasmohammed" target="_blank" class="btn contact-details">
-                    <i class="fab fa-facebook-square"></i> Facebook</a>
+            <h1 id="together">Let's Work together</h1>
+            <p id="served">How do you want your tea served?</p>
+            <div id="contact_Us" class="contact-links">
+                <a href="https://facebook.com/lucasmohammed" target="_blank" class="btn-contact-details">
+                    <i class="fab fa-facebook-square"></i> Facebook
+                </a>
+                <a id="profile-link" href="https://github.com/Lucasinho92" target="_blank" class="btn-contact-details">
+                    <i class=""fa fab fa-github-square></i>Github
+                </a>
+                <a href="https://twitter.com/Holuwerseun" target="_blank" class="btn-contact-details">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="https://yahoomail.com/lucaseun" target="_blank" class="btn-contact-details">
+                    <i class="fab fab fa-yahoo"></i>@send mail
+                </a>
+                <a href="+23408136582685" class="btn-contact-details"><i class="fas fa-phone"></i>08136582685</a>
+
+
             </div>
         </section>
     </body>
-    <footer></footer>
+    <footer>
+        copyright@ High resolution media...
+    </footer>
 
 </html>
